@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News</title>
+        <link rel="icon" href="img/logo4.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/news.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/logotab.png"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#" class="active">NEWS</i></a>               
+                        <li><a href="contactinfo.html">ANNOUNCEMENTS</a></li>
+                        <li><a href="https://discord.gg/vtubersplace">DISCORD</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <!--MOMENT ELMAO-->
+
+        <body>
+            <section class="testimonials">
+                <div class="testimonial-row">
+                    <div class="testimonial-col">
+                        <img src="img/dokibird.png" alt="dokibird">
+                        <div>
+                            <p>News | Independent</p>
+                            <h3>Dokibird's Return Stream hits peak viewers at 136k</h3>
+                            <p>08 Feb 2023</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-row">
+                        <div class="testimonial-col">
+                            <img src=" https://preview.redd.it/takanashi-kiara-smile-v0-sexnvpfqmata1.png?auto=webp&s=3a81f5bda2d45d9d153cd300cade1324f3544369" alt="kiara">
+                            <div>
+                                <p>News | Hololive</p>
+                                <h3> Takanashi Kiara returns from her break, although there are some hiccups before her return stream</h3>
+                                <p>09 January 2024</p>
+                            </div>
+                    </div>
+                
+                    <div class="testimonial-row">
+                        <div class="testimonial-col">
+                            <img src="img/cover24Q3.png" alt="cover24Q3">
+                            <div>
+                                <p>News | Hololive</p>
+                                <h3>COVER Corp. Released their Financial Report for the Q3 of FY 23/24</h3>
+                                <p>08 Feb 2023</p>
+                            </div>
+                    </div>
+                    <div class="testimonial-row">
+                        <div class="testimonial-col">
+                            <img src="img/anycolorStock.png" alt="anycolorStock">
+                            <div>
+                                <p>News | NIJISANJI</p>
+                                <h3>Anycolor's Internal Relations statement caused a 10% drop in their Stock Price </h3>
+                                <p>07 Feb 2023</p>
+                            </div>
+                    </div>
+                    <div class="testimonial-row">
+                        <div class="testimonial-col">
+                            <img src="https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2024/02/Selen-Tatsuki-Termination.webp" alt="Selen">
+                            <div>
+                                <p>Editorial | NIJISANJI</p>
+                                <h3>NIJISANJI announced the contract termination of Selen Tatsuki, the whole community didn't liked how they handled it </h3>
+                                <p>05 Feb 2023</p>
+                            </div>
+                    </div>
+                    <div class="testimonial-row">
+                        <div class="testimonial-col">
+                            <img src="img/pomu.jpg" alt="pomu">
+                            <div>
+                                <p>News | NIJISANJI</p>
+                                <h3>Pomu bode her farewell before going off-air one last time </h3>
+                                <p>20 January 2024</p>
+                            </div>
+                    </div>
+                    
+            </section>
+        </body>
+</html>
