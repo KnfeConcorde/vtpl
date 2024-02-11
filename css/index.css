@@ -275,9 +275,10 @@ nav img{
 }
 
 .hero-btn:hover{
-    border: 1px solid #40813D;
-    background: #40813D;
+    border: 1px solid white;
+    background: white;
     transition: 1s;
+    color: #000;
 }
 
 nav .fa{
