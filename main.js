@@ -9,13 +9,11 @@ function filterTestimonials() {
   for (var i = 0; i < testimonialFilters.length; i++) {
     var testimonialFilter = testimonialFilters[i];
     
-    // Get the text content of the testimonial-filter element and split it into words
-    var words = (testimonialFilter.textContent || testimonialFilter.innerText).toLowerCase().split(/\s+/);
+    // Get the text content of the testimonial-filter element
+    var textContent = (testimonialFilter.textContent || testimonialFilter.innerText).toLowerCase();
     
-    // Check if any of the words in the testimonial-filter element match the search input
-    var matchFound = words.some(function(word) {
-      return word.includes(searchInput);
-    });
+    // Check if the text content of the testimonial-filter element matches the search input
+    var matchFound = textContent.includes(searchInput);
     
     // If a match was found, show the testimonial-filter element
     if (matchFound) {
@@ -26,7 +24,3 @@ function filterTestimonials() {
     }
   }
 }
-
-// Get the search input element and add the filterTestimonials function as an event listener for the input event
-var searchInput = document.getElementById("search-input");
-searchInput.addEventListener("input", filterTestimonials);
