@@ -384,6 +384,7 @@ nav .fa{
 }
 
 .search input{
+    width: 350px;
     padding: 6px;
     margin-top: 8px;
     font-size: 17px;
@@ -411,6 +412,9 @@ nav .fa{
     .testimonial-col {
       flex-basis: 100%;
     }
+    .testimonial-col h3{
+        font-size: 100%;
+      }
     .testimonial-col img {
         display: none;
         width: 100%;
