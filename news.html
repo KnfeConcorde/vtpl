@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News</title>
+        <link rel="icon" type="image/x-icon" href="img/medal22.png">
+        <link rel="icon" href="img/logo4.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/news.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!--top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="img/logotab.png"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#" class="active">NEWS</i></a>               
+                        <li><a href="contactinfo.html">ANNOUNCEMENTS</a></li>
+                        <li><a href="https://discord.gg/vtubersplace">DISCORD</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Search...">
+            </div>
+        <!--MOMENT ELMAO-->
+
+        <body>
+            <section class="testimonials">
+                <a href="news/Dokibird-Final-Fandom-name.html"></a><div class="testimonial-row">
+                    <div class="testimonial-col testimonial-filter">
+                        <img src="https://pbs.twimg.com/media/GF_ThfhWoAAZw9D?format=jpg&name=large">
+                        <div class="title">
+                            <p>Editorial | Independent</p>
+                            <a href="news/Dokibird-Final-Fandom-name.html"><h3>Dokibird celebrates Lunar New Year and finalized her fandom name</h3></a>
+                            <p>11 Feb 2024</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="testimonial-row">
+                    <div class="testimonial-col testimonial-filter">
+                        <img src="https://pbs.twimg.com/media/GFIr9kvaEAAKp1c?format=jpg&name=large" alt="nijipostpone">
+                        <div class="title">
+                            <p>News | NIJISANJI</p>
+                            <a href="news/NIJIEN-Mario-Kart-Postponed.html"><h3>NIJISANJI English Postpones Mario Kart 8 Tournament</h3></a>
+                            <p>11 Feb 2024</p>
+                        </div>
+                    </div>
+                </div>               
+            </section>
+            <script src="search.js"></script>
+        </body>
+</html>
