@@ -125,7 +125,6 @@ html{
     margin-left: 5%;
     text-align: left;
   }
-
   .article-main p{
     font-size: 120%;
     padding-top: 50px;
@@ -159,6 +158,10 @@ html{
     .article-main p{
         font-size: 90%;
     }
+    
+    .article-main blockquote{
+        width: 252;
+      }
 }
 
   #myBtn:hover {
