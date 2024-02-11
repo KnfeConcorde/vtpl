@@ -14,7 +14,6 @@ function filterTestimonials() {
     
     // Check if any of the words in the testimonial-filter element match the search input
     var matchFound = words.some(function(word) {
-      // Check if the search input is a substring of the word
       return word.includes(searchInput);
     });
     
@@ -27,3 +26,7 @@ function filterTestimonials() {
     }
   }
 }
+
+// Get the search input element and add the filterTestimonials function as an event listener for the input event
+var searchInput = document.getElementById("search-input");
+searchInput.addEventListener("input", filterTestimonials);
