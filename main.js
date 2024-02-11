@@ -10,11 +10,12 @@ function filterTestimonials() {
     var testimonialFilter = testimonialFilters[i];
     
     // Get the text content of the testimonial-filter element and split it into words
-    var words = (testimonialFilter.textContent || testimonialFilter.innerText).split(" ");
+    var words = (testimonialFilter.textContent || testimonialFilter.innerText).toLowerCase().split(" ");
     
     // Check if any of the words in the testimonial-filter element match the search input
     var matchFound = words.some(function(word) {
-      return word.toLowerCase().includes(searchInput);
+      // Check if the search input is a substring of the word
+      return word.includes(searchInput);
     });
     
     // If a match was found, show the testimonial-filter element
