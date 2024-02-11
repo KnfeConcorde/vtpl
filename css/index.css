@@ -9,8 +9,26 @@
 .notTestimonial{
     color: white;
 }
+.testimonial-col .title{
+    margin-left: 20px;
+}
+
+.testimonial-filter {
+    overflow: hidden;
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+  }
 
 .testimonial-col{
+    overflow: hidden;
     flex-basis: 44%;
     border-radius: 10px;
     margin-bottom: 3%;
@@ -22,8 +40,13 @@
     cursor: pointer;
     display: flex;
 }
+.testimonial-col a{
+    text-decoration: none;
+    color: black;
+}
 
 .testimonial-col img{
+    overflow: hidden;
     height: 70px;
     margin-left: 5px;
     margin-right: 30px;
@@ -37,10 +60,6 @@
 .testimonial-col h3{
     margin-top: 15px;
     text-align: left;
-}
-
-.testimonial-col .fa{
-    color: #40813D;
 }
 
 
@@ -94,6 +113,60 @@ html{
     border-radius: 4px;
   }
   
+  .article{
+    position: relative;
+    padding: 5%;
+  }
+  .article-main{
+    flex-basis: 60%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    text-align: left;
+    background: white;
+    padding: 50px;
+    cursor: pointer;
+    display: block;
+  }
+  .article-main img{
+    text-align: center;
+  }
+
+  .article-main h1{
+    font-size: 150%;
+    padding-top: 25px;
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  .article-main p{
+    font-size: 120%;
+    padding-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 25px;
+    text-align: justify;
+    line-height: 2;
+  }
+  .article-main img{
+    width: 50%;
+    position: relative;
+    display: block; /* Add this line */
+    margin: 0 auto; /* Add this line */
+  }
+  .article-main .date{
+    padding-top: 10px;
+    margin-left: 5%;
+  }
+  .article-main figcaption{
+    padding: 10px;
+    text-align: center;
+  }
+  .article-main::before{
+    content: "";
+    display: block;
+    height: 10px;
+}
+
   #myBtn:hover {
     background-color: white;
       color:black;
@@ -104,6 +177,7 @@ html{
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../img/header.PNG);
     background-position: center;
+    z-index: 1;
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -263,8 +337,12 @@ nav .fa{
 }
 
 .about-col h1{
-    padding-top: 0;
+    padding-top: 10px;
     color: #4c4c4c;
+}
+.about-col a{
+    text-decoration: none;
+    color: black;
 }
 
 .about-col p{
@@ -298,4 +376,28 @@ nav .fa{
         flex-basis: 100%; /* Change this to 100% to make each column take up the full width of the container */
         max-width: 100%; /* Change this to 100% */
     }
+}
+
+.search{
+    float: right;
+    margin-right: 90px;
+    border-radius: 10px;
+}
+
+.search input{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.search button{
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 20px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
 }
