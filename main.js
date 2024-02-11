@@ -10,7 +10,7 @@ function filterTestimonials() {
     var testimonialFilter = testimonialFilters[i];
     
     // Get the text content of the testimonial-filter element and split it into words
-    var words = (testimonialFilter.textContent || testimonialFilter.innerText).toLowerCase().split(" ");
+    var words = (testimonialFilter.textContent || testimonialFilter.innerText).toLowerCase().split(/\s+/);
     
     // Check if any of the words in the testimonial-filter element match the search input
     var matchFound = words.some(function(word) {
