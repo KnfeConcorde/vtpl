@@ -6,9 +6,11 @@
     color: white;
 }
 
-.notTestimonial{
+.notTestimonial h1{
     color: white;
+    margin-left: 5%;
 }
+
 .testimonial-col .title{
     margin-left: 20px;
 }
