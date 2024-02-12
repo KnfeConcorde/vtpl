@@ -1,6 +1,6 @@
 function filterTestimonials() {
-  // Get the search input value
-  var searchInput = document.getElementById("search-input").value.toLowerCase();
+  // Get the search input value and split it into an array of keywords
+  var searchInput = document.getElementById("search-input").value.toLowerCase().split(" ");
   console.log("Search input:", searchInput);
 
   // Get all the testimonial-filter elements
@@ -12,12 +12,14 @@ function filterTestimonials() {
     var testimonialFilter = testimonialFilters[i];
 
     // Get the text content of the testimonial-filter element and split it into words
-    var words = (testimonialFilter.textContent || testimonialFilter.innerText).split(" ");
+    var words = (testimonialFilter.textContent || testimonialFilter.innerText).toLowerCase().split(" ");
     console.log("Number of words in testimonial filter:", words.length);
 
-    // Check if any of the words in the testimonial-filter element match the search input
-    var matchFound = words.some(function(word) {
-      return word.toLowerCase().includes(searchInput);
+    // Check if any of the keywords in the search input match any of the words in the testimonial-filter element
+    var matchFound = searchInput.some(function(keyword) {
+      return words.some(function(word) {
+        return word.includes(keyword);
+      });
     });
     console.log("Match found in testimonial filter:", matchFound);
 
