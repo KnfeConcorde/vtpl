@@ -1,5 +1,5 @@
 .testimonials{
-    padding-top: 5%;
+    padding-top: 15%;
     padding-bottom: 5%;
 }
 .testimonials h1{
@@ -77,6 +77,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 
 .updates{
     text-align: center;
@@ -384,6 +385,12 @@ nav .fa{
         max-width: 100%; /* Change this to 100% */
     }
 }
+.subcount{
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #777;
+}
 
 .search{
     float: right;
@@ -440,6 +447,9 @@ nav .fa{
       float: none;
       margin-right: 30px;
       text-align: right;
+    }
+    .twitter-tweet{
+        width: 100% !important;
     }
     
     nav {
